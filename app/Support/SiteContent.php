@@ -128,7 +128,14 @@ class SiteContent
                     'cta_button_text' => 'Start my quote',
                     'show_cta' => true,
                 ],
-                'contact' => ['eyebrow' => 'Talk to Cleanway', 'title' => 'Let’s make the next step simple.', 'description' => 'Tell us what you need and the right local team will take it from there.'],
+                'contact' => [
+                    'eyebrow' => 'Talk to Cleanway',
+                    'title' => 'Let’s make the next step simple.',
+                    'description' => 'Tell us what you need and the right local team will take it from there.',
+                    'map_eyebrow' => 'Find us',
+                    'map_title' => 'Our location.',
+                    'map_description' => 'Visit our Auckland base, or use the map to see where we work from.',
+                ],
                 '404' => ['title' => 'This page has moved on.', 'description' => 'Let’s get you back to a space that makes sense.'],
             ],
         ];
