@@ -4,7 +4,7 @@
 @section('page-title', 'Settings')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Google Analytics Settings',
         'description' => 'Configure Google Analytics tracking for your website.',
     ])

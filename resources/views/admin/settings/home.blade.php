@@ -4,7 +4,7 @@
 @section('page-title', 'Settings')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Home Settings',
         'description' => 'Configure your homepage content, statistics, and featured video.',
     ])

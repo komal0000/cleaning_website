@@ -4,7 +4,7 @@
 @section('page-title', 'Settings')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Public Site Content',
         'description' => 'Edit public copy, links, and image paths. Each section has safe defaults, so incomplete values never leave the site blank.',
     ])

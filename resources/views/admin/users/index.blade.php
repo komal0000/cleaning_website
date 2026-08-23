@@ -4,7 +4,7 @@
 @section('page-title', 'Users')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'User Management',
         'description' => 'Manage admin users and their permissions.',
         'actions' => '<a href="' . route('admin.users.create') . '" class="btn btn-primary"><i data-lucide="plus"></i> Add New User</a>',

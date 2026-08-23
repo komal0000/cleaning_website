@@ -22,7 +22,7 @@
     <nav class="site-container main-nav" aria-label="Primary navigation">
         <a href="{{ route('home') }}" class="site-brand" aria-label="Cleanway Service Limited home">
             @if (View::exists('front.components.header.logo'))
-                @include('front.components.header.logo')
+                @includeIf('front.components.header.logo')
             @else
                 <span class="brand-fallback-mark" aria-hidden="true">CW</span>
                 <span class="brand-fallback-type">Cleanway <small>Service Limited</small></span>

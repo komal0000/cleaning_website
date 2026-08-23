@@ -23,7 +23,7 @@
             <div class="footer-brand-block">
                 <a href="{{ route('home') }}" class="site-brand site-brand-footer" aria-label="Cleanway Service Limited home">
                     @if (View::exists('front.components.header.logo'))
-                        @include('front.components.header.logo')
+                        @includeIf('front.components.header.logo')
                     @else
                         <span class="brand-fallback-mark" aria-hidden="true">CW</span>
                         <span class="brand-fallback-type">Cleanway <small>Service Limited</small></span>

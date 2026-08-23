@@ -4,7 +4,7 @@
 @section('page-title', 'Settings')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Team Page Settings',
         'description' => 'Hero copy and section text shown on the public team page.',
     ])

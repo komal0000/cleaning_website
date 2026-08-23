@@ -4,7 +4,7 @@
 @section('page-title', 'Employees')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Create Employee',
         'description' => 'Give a new employee panel access with a code and password.',
     ])

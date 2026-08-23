@@ -4,7 +4,7 @@
 @section('page-title', 'Settings')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'About Page Settings',
         'description' => 'Hero section, statistics, values, and company story.',
     ])

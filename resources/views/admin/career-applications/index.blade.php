@@ -4,7 +4,7 @@
 @section('page-title', 'Applications')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Career Applications',
         'description' => 'Applications submitted through the careers page.',
         'actions' => '<span class="badge bg-primary align-self-center">' . $applications->count() . ' Applications</span>',

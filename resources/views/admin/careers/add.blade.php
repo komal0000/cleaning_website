@@ -4,7 +4,7 @@
 @section('page-title', 'Careers')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Add Career',
         'description' => 'Publish a new role on the careers page.',
     ])

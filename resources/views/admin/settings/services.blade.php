@@ -4,7 +4,7 @@
 @section('page-title', 'Settings')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Services Page Settings',
         'description' => 'Service areas and promises displayed on the public Services page.',
     ])

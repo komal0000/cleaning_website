@@ -4,7 +4,7 @@
 @section('page-title', 'Gallery')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => $gallery->title,
         'description' => 'Gallery item details and media.',
         'actions' => '<a href="' . route('galleries.edit', $gallery->id) . '" class="btn btn-primary"><i data-lucide="pencil"></i> Edit Gallery</a>'

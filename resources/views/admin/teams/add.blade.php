@@ -4,7 +4,7 @@
 @section('page-title', 'Team Members')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Add Team Member',
         'description' => 'Create a new profile for the public team page.',
     ])

@@ -4,7 +4,7 @@
 @section('page-title', 'Gallery')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Edit Gallery Item',
         'description' => $gallery->title,
     ])

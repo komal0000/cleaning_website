@@ -4,7 +4,7 @@
 @section('page-title', 'Settings')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Google Maps & Reviews',
         'description' => 'Google Maps API key and Place ID used for the reviews integration.',
     ])

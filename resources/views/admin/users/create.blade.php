@@ -4,7 +4,7 @@
 @section('page-title', 'Users')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Create New User',
         'description' => 'Add a new admin user to the system.',
     ])

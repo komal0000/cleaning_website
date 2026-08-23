@@ -106,7 +106,7 @@
                         </div>
                     @endif
 
-                    @include('front.components.contact.form')
+                    @includeIf('front.components.contact.form')
                 @endif
             </div>
         </div>

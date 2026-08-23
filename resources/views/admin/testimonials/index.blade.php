@@ -4,7 +4,7 @@
 @section('page-title', 'Testimonials')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Testimonials',
         'description' => 'Client reviews shown on the testimonials page.',
         'actions' => '<a href="' . route('testimonials.create') . '" class="btn btn-primary"><i data-lucide="plus"></i> Add New Testimonial</a>',

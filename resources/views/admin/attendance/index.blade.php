@@ -4,7 +4,7 @@
 @section('page-title', 'Attendance')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Attendance Logs',
         'description' => 'Filter, review, and export employee attendance.',
         'actions' => '<a href="' . route('admin.attendance.export', request()->query()) . '" class="btn btn-primary"><i data-lucide="download"></i> Export CSV</a>',

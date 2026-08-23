@@ -4,7 +4,7 @@
 @section('page-title', 'Users')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Edit User',
         'description' => $user->name,
     ])

@@ -4,7 +4,7 @@
 @section('page-title', 'Testimonials')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Edit Testimonial',
         'description' => $testimonial->name,
     ])

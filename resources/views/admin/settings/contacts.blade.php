@@ -4,7 +4,7 @@
 @section('page-title', 'Settings')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Contact Details',
         'description' => 'Phone, email, address, social links, and map information shown on the contact page.',
     ])

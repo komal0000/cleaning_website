@@ -4,7 +4,7 @@
 @section('page-title', 'Team Members')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Team Members',
         'description' => 'People shown on the public team page.',
         'actions' => '<a href="' . route('teams.create') . '" class="btn btn-primary"><i data-lucide="plus"></i> Add New</a>',

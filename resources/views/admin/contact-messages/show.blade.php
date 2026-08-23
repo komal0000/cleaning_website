@@ -4,7 +4,7 @@
 @section('page-title', 'Contact Messages')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Message from ' . $contactMessage->name,
         'description' => 'Submitted ' . $contactMessage->created_at->diffForHumans() . '.',
         'actions' => '<a href="' . route('admin.contact-messages.index') . '" class="btn btn-light"><i data-lucide="arrow-left"></i> Back to Messages</a>',

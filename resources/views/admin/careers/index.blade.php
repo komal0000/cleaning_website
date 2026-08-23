@@ -4,7 +4,7 @@
 @section('page-title', 'Careers')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Career Opportunities',
         'description' => 'Open roles published on the careers page.',
         'actions' => '<a href="' . route('careers.create') . '" class="btn btn-primary"><i data-lucide="plus"></i> Add Career</a>',

@@ -4,7 +4,7 @@
 @section('page-title', 'Services')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Services',
         'description' => 'Services listed on the public website.',
         'actions' => '<a href="' . route('services.create') . '" class="btn btn-primary"><i data-lucide="plus"></i> Add New Service</a>',

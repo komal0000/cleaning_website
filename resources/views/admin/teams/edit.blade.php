@@ -4,7 +4,7 @@
 @section('page-title', 'Team Members')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Edit Team Member',
         'description' => $team->name,
     ])

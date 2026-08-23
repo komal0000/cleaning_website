@@ -4,7 +4,7 @@
 @section('page-title', 'Contact Messages')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Contact Messages',
         'description' => 'Enquiries submitted through the public contact form.',
     ])

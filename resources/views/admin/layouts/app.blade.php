@@ -117,7 +117,7 @@
             </header>
 
             <main class="admin-content">
-                @include('admin.partials.flash')
+                @includeIf('admin.partials.flash')
                 @yield('content')
             </main>
 

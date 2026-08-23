@@ -4,7 +4,7 @@
 @section('page-title', 'Employees')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Employees',
         'description' => 'Manage employee access credentials and status.',
         'actions' => '<a href="' . route('admin.employees.create') . '" class="btn btn-primary"><i data-lucide="plus"></i> Add Employee</a>',

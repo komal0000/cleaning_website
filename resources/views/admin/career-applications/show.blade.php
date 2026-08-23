@@ -4,7 +4,7 @@
 @section('page-title', 'Applications')
 
 @section('content')
-    @include('admin.partials.page-header', [
+    @includeIf('admin.partials.page-header', [
         'title' => 'Application from ' . $careerApplication->full_name,
         'description' => 'Applied ' . $careerApplication->created_at->diffForHumans() . '.',
         'actions' => '<a href="' . route('admin.career-applications.index') . '" class="btn btn-light"><i data-lucide="arrow-left"></i> Back to Applications</a>',

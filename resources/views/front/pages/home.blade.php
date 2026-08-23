@@ -5,5 +5,5 @@
 
 @section('content')
     @includeIf('front.components.hero')
-    @include('front.components.home.media')
+    @includeIf('front.components.home.media')
 @endsection
