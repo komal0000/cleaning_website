@@ -171,6 +171,14 @@
 <section class="section reveal-story-section">
     <div class="site-container reveal-story-grid">
         <div class="reveal-story-visual reveal-on-scroll">
+            <img
+                class="reveal-story-image"
+                src="{{ asset('images/home/glass-cleaning-before-after.webp') }}"
+                alt="Before and after view of a glass shower screen, showing hard-water marks before cleaning and clear glass after cleaning"
+                loading="lazy"
+                width="1536"
+                height="1024"
+            >
             <div class="reveal-story-half reveal-story-before"><span>Before</span></div>
             <div class="reveal-story-half reveal-story-after"><span>After</span></div>
             <div class="reveal-divider" aria-hidden="true"><span><i data-lucide="move-horizontal"></i></span></div>

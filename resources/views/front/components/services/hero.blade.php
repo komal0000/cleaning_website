@@ -20,7 +20,7 @@
             <figure class="service-hero-media reveal-on-scroll" data-reveal-delay="100">
                 <img class="service-hero-photo"
                     src="{{ $heroImage }}"
-                    alt="{{ data_get($servicesContent, 'title') }}"
+                    alt="{{ data_get($servicesContent, 'image_alt') ?: data_get($servicesContent, 'title') }}"
                     width="1024" height="720">
                 <figcaption>Services shaped around real spaces.</figcaption>
             </figure>
